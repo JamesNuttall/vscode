@@ -1,1 +1,82 @@
+{
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
+    "breadcrumbs.enabled": false,
+    "workbench.editor.showTabs": "single",
+    "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.showTabs": "single",
+    "zenMode.hideStatusBar": false,
 
+    // vim
+    "vim.leader": "<Space>",
+    "vim.normalModeKeyBindings": [
+        // Navigation
+        { "before": ["<C-d"], "commands": ["cursorPageDown", "editor.action.centerEditorView" ] },
+        { "before": ["<C-u"], "commands": ["cursorPageUp", "editor.action.centerEditorView" ] },
+
+        // File Tree
+        {
+            "before": ["<leader>", "p", "v"],
+            "commands": ["workbench.explorer.fileView.focus"]
+        },
+    
+        // Command Palette
+        {
+            "before": ["<leader>", "p", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        { 
+            "before": ["<leader>", "p", "c"],
+            "commands": ["workbench.action.showCommands"]
+        },
+
+        // Search Files
+        {
+            "before": ["<leader>", "p", "s"],
+            "commands": ["workbench.action.findInFiles"]
+        },
+    
+        // Source Control
+        {
+            "before": ["<leader>", "g", "s"],
+            "commands": ["workbench.view.scm"]
+        },
+
+        // Find and Replace
+        {
+            "before": ["<leader>", "s"],
+            "commands": ["editor.action.addSelectionToNextFindMatch", "workbench.action.findInFiles"]
+        }
+    ],
+
+    "vim.visualModeKeyBindings": [
+        // indent
+        {
+            "before": ["<"],
+            "commands": ["editor.action.indentLines"]
+        },
+        {
+            "before": [">"],
+            "commands": ["editor.action.outdentLines"]
+        },
+
+
+        // Move lines
+        {
+            "before": ["J"],
+            "commands": ["editor.action.moveLinesDownAction"]
+        },
+        {
+            "before": ["K"],
+            "commands": ["editor.action.moveLinesUpAction"]
+        },
+    ],
+    "window.menuBarVisibility": "compact",
+    "workbench.editor.editorActionsLocation": "titleBar",
+    "workbench.colorTheme": "GitHub Dark (Web Based)",
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+}
