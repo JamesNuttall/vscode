@@ -54,11 +54,11 @@
     "vim.visualModeKeyBindings": [
         // indent
         {
-            "before": ["<"],
+            "before": [">"],
             "commands": ["editor.action.indentLines"]
         },
         {
-            "before": [">"],
+            "before": ["<"],
             "commands": ["editor.action.outdentLines"]
         },
 
