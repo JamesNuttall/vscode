@@ -6,7 +6,7 @@
     { "key": "ctrl+h", "command": "workbench.action.terminal.focusPrevious", "when": "terminalFocus" },
 
     // File Tree (NETRW STYLE)
-    { "key": "ctrl+c", "command": "workbench.action.toggleSidebarVisibility", "when": "explorerViewletVisible" },
+    { "key": "ctrl+c", "command": "workbench.action.toggleSidebarVisibility", "when": "explorerViewletVisible && filesExplorerFocus" },
     { "key": "space+p+v", "command": "workbench.files.action.focusFilesExplorer", "when": "editorTextFocus" },
     { "key": "d", "command": "explorer.newFolder", "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus" },
     { "key": "shift+d", "command": "deleteFile", "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus" },
