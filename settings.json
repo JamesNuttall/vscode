@@ -16,6 +16,9 @@
         { "before": ["<C-d"], "commands": ["cursorPageDown", "editor.action.centerEditorView" ] },
         { "before": ["<C-u"], "commands": ["cursorPageUp", "editor.action.centerEditorView" ] },
 
+        { "before": ["<C-a>", "n"], "commands": ["workbench.action.nextEditor", "editor.action.centerEditorView" ] },
+        { "before": ["<C-a>", "p"], "commands": ["workbench.action.previousEditor", "editor.action.centerEditorView" ] },
+        
         // File Tree
         {
             "before": ["<leader>", "p", "v"],
